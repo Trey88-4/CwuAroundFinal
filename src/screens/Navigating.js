@@ -13,12 +13,12 @@ function Navigating(props) {
       <MapView1>
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyDZcyFOaGz5nm6S5I_LEsLK--QH_2nHu6g" }}
-          defaultZoom={4}
+          defaultZoom={18}
           provider="MapView.PROVIDER_GOOGLE"
           defaultCenter={{
-            latitude: 37.78825,
-            lat: 20.5937,
-            lng: 78.9629
+              latitude: 0,
+              lat: 47.00129507792367,
+              lng: -120.5401834024661
           }}
           customMapStyle="Standard"
         />
