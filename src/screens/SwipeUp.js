@@ -12,177 +12,182 @@ import CupertinoSearchBarWithCancelButton from "../components/CupertinoSearchBar
 import GoogleMapReact from "google-map-react";
 
 function SwipeUp(props) {
-  return (
-    <>
-        <Image
-            src={require("../assets/images/blankIphone.jpeg")}
-            resizeMode="contain"
-        >
-        </Image>
-      <RectStack>
-        <Rect>
-          <Link to="/Home">
-            <Button1>
-              <ButtonOverlay></ButtonOverlay>
-            </Button1>
-          </Link>
-          <CupertinoButtonDelete
-            iconName="ios-trash"
-            style={{
-              height: 34,
-              width: 45,
-              marginTop: 8,
-              marginLeft: 273
-            }}
-            icon="md-navigate"
-          ></CupertinoButtonDelete>
-          <Icon8Row>
-            <IoniconsIcon
-              name="ios-star-half"
-              style={{
-                color: "rgba(128,128,128,1)",
-                fontSize: 40,
-                height: 44,
-                width: 35,
-                marginTop: 1
-              }}
-            ></IoniconsIcon>
-            <EntypoIcon
-              name="back-in-time"
-              style={{
-                color: "rgba(128,128,128,1)",
-                fontSize: 40,
-                height: 45,
-                width: 40,
-                marginLeft: 68
-              }}
-            ></EntypoIcon>
-            <MaterialCommunityIconsIcon
-              name="account-card-details"
-              style={{
-                color: "rgba(128,128,128,1)",
-                fontSize: 40,
-                height: 44,
-                width: 40,
-                marginLeft: 76,
-                marginTop: 1
-              }}
-            ></MaterialCommunityIconsIcon>
-          </Icon8Row>
-          <Favorites1Row>
-            <Favorites1>Favorites</Favorites1>
-            <History2>History</History2>
-            <Account1>Account</Account1>
-          </Favorites1Row>
-          <Icon5Row>
-            <MaterialCommunityIconsIcon
-              name="sign-caution"
-              style={{
-                color: "rgba(128,128,128,1)",
-                fontSize: 40,
-                height: 44,
-                width: 40,
-                marginTop: 3
-              }}
-            ></MaterialCommunityIconsIcon>
-            <FontAwesomeIcon
-              name="calendar"
-              style={{
-                color: "rgba(128,128,128,1)",
-                fontSize: 40,
-                height: 40,
-                width: 37,
-                marginLeft: 72,
-                marginTop: 2
-              }}
-            ></FontAwesomeIcon>
-            <IoniconsIcon
-              name="ios-people"
-              style={{
-                color: "rgba(128,128,128,1)",
-                fontSize: 40,
-                height: 44,
-                width: 35,
-                marginLeft: 77
-              }}
-            ></IoniconsIcon>
-          </Icon5Row>
-          <HazardsRow>
-            <Hazards>Hazards</Hazards>
-            <Events>Events</Events>
-            <Friends>Friends</Friends>
-          </HazardsRow>
-          <Icon6Row>
-            <MaterialIconsIcon
-              name="live-help"
-              style={{
-                color: "rgba(128,128,128,1)",
-                fontSize: 40,
-                height: 40,
-                width: 40,
-                marginTop: 2
-              }}
-            ></MaterialIconsIcon>
-            <MaterialCommunityIconsIcon
-              name="room-service"
-              style={{
-                color: "rgba(128,128,128,1)",
-                fontSize: 40,
-                height: 44,
-                width: 40,
-                marginLeft: 65
-              }}
-            ></MaterialCommunityIconsIcon>
-            <EvilIconsIcon
-              name="gear"
-              style={{
-                color: "rgba(128,128,128,1)",
-                fontSize: 40,
-                height: 35,
-                width: 40,
-                marginLeft: 73,
-                marginTop: 2
-              }}
-            ></EvilIconsIcon>
-          </Icon6Row>
-          <HelpRow>
-            <Help>Help</Help>
-            <Services>Services</Services>
-            <Settings>Settings</Settings>
-          </HelpRow>
-          <Link to="/Navigating">
-            <Button2>
-              <ButtonOverlay>
-                <Go>Go!</Go>
-              </ButtonOverlay>
-            </Button2>
-          </Link>
-        </Rect>
-        <CupertinoSearchBarWithCancelButton
-          style={{
-            height: 27,
-            width: 275,
-            position: "absolute",
-            left: 0,
-            top: 25
-          }}
-        ></CupertinoSearchBarWithCancelButton>
-      </RectStack>
-      <MapView1>
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyDZcyFOaGz5nm6S5I_LEsLK--QH_2nHu6g" }}
-          defaultZoom={14}
-          provider="MapView.PROVIDER_GOOGLE"
-          defaultCenter={{
-              latitude: 0,
-              lat: 47.007238655013886,
-              lng: -120.53683909837119
-          }}
-          customMapStyle="Standard"
-        />
-      </MapView1>
-    </>
-  );
+    return (
+        <>
+            <Image
+                src={require("../assets/images/blankIphone.jpeg")}
+                resizeMode="contain"
+            >
+            </Image>
+            <RectStack>
+                <Rect>
+                    <Link to="/Home">
+                        <Button1>
+                            <ButtonOverlay></ButtonOverlay>
+                        </Button1>
+                    </Link>
+                    <CupertinoButtonDelete
+                        iconName="ios-trash"
+                        style={{
+                            height: 34,
+                            width: 45,
+                            marginTop: 8,
+                            marginLeft: 273
+                        }}
+                        icon="md-navigate"
+                    ></CupertinoButtonDelete>
+                    <Icon8Row>
+                        <IoniconsIcon
+                            name="ios-star-half"
+                            style={{
+                                color: "rgba(128,128,128,1)",
+                                fontSize: 40,
+                                height: 44,
+                                width: 35,
+                                marginTop: 1
+                            }}
+                        ></IoniconsIcon>
+                        <EntypoIcon
+                            name="back-in-time"
+                            style={{
+                                color: "rgba(128,128,128,1)",
+                                fontSize: 40,
+                                height: 45,
+                                width: 40,
+                                marginLeft: 68
+                            }}
+                        ></EntypoIcon>
+                        <MaterialCommunityIconsIcon
+                            name="account-card-details"
+                            style={{
+                                color: "rgba(128,128,128,1)",
+                                fontSize: 40,
+                                height: 44,
+                                width: 40,
+                                marginLeft: 76,
+                                marginTop: 1
+                            }}
+                        ></MaterialCommunityIconsIcon>
+                    </Icon8Row>
+                    <Favorites1Row>
+                        <Favorites1>Favorites</Favorites1>
+                        <Link to="/Favorites">
+                            <Button3>
+                                <ButtonOverlay></ButtonOverlay>
+                            </Button3>
+                        </Link>
+                        <History2>History</History2>
+                        <Account1>Account</Account1>
+                    </Favorites1Row>
+                    <Icon5Row>
+                        <MaterialCommunityIconsIcon
+                            name="sign-caution"
+                            style={{
+                                color: "rgba(128,128,128,1)",
+                                fontSize: 40,
+                                height: 44,
+                                width: 40,
+                                marginTop: 3
+                            }}
+                        ></MaterialCommunityIconsIcon>
+                        <FontAwesomeIcon
+                            name="calendar"
+                            style={{
+                                color: "rgba(128,128,128,1)",
+                                fontSize: 40,
+                                height: 40,
+                                width: 37,
+                                marginLeft: 72,
+                                marginTop: 2
+                            }}
+                        ></FontAwesomeIcon>
+                        <IoniconsIcon
+                            name="ios-people"
+                            style={{
+                                color: "rgba(128,128,128,1)",
+                                fontSize: 40,
+                                height: 44,
+                                width: 35,
+                                marginLeft: 77
+                            }}
+                        ></IoniconsIcon>
+                    </Icon5Row>
+                    <HazardsRow>
+                        <Hazards>Hazards</Hazards>
+                        <Events>Events</Events>
+                        <Friends>Friends</Friends>
+                    </HazardsRow>
+                    <Icon6Row>
+                        <MaterialIconsIcon
+                            name="live-help"
+                            style={{
+                                color: "rgba(128,128,128,1)",
+                                fontSize: 40,
+                                height: 40,
+                                width: 40,
+                                marginTop: 2
+                            }}
+                        ></MaterialIconsIcon>
+                        <MaterialCommunityIconsIcon
+                            name="room-service"
+                            style={{
+                                color: "rgba(128,128,128,1)",
+                                fontSize: 40,
+                                height: 44,
+                                width: 40,
+                                marginLeft: 65
+                            }}
+                        ></MaterialCommunityIconsIcon>
+                        <EvilIconsIcon
+                            name="gear"
+                            style={{
+                                color: "rgba(128,128,128,1)",
+                                fontSize: 40,
+                                height: 35,
+                                width: 40,
+                                marginLeft: 73,
+                                marginTop: 2
+                            }}
+                        ></EvilIconsIcon>
+                    </Icon6Row>
+                    <HelpRow>
+                        <Help>Help</Help>
+                        <Services>Services</Services>
+                        <Settings>Settings</Settings>
+                    </HelpRow>
+                    <Link to="/Navigating">
+                        <Button2>
+                            <ButtonOverlay>
+                                <Go>Go!</Go>
+                            </ButtonOverlay>
+                        </Button2>
+                    </Link>
+                </Rect>
+                <CupertinoSearchBarWithCancelButton
+                    style={{
+                        height: 27,
+                        width: 275,
+                        position: "absolute",
+                        left: 0,
+                        top: 25
+                    }}
+                ></CupertinoSearchBarWithCancelButton>
+            </RectStack>
+            <MapView1>
+                <GoogleMapReact
+                    bootstrapURLKeys={{ key: "AIzaSyDZcyFOaGz5nm6S5I_LEsLK--QH_2nHu6g" }}
+                    defaultZoom={14}
+                    provider="MapView.PROVIDER_GOOGLE"
+                    defaultCenter={{
+                        latitude: 0,
+                        lat: 47.007238655013886,
+                        lng: -120.53683909837119
+                    }}
+                    customMapStyle="Standard"
+                />
+            </MapView1>
+        </>
+    );
 }
 
 const Rect = styled.div`
@@ -381,6 +386,17 @@ const Image = styled.img`
   position: absolute;
   left: 95px;
   top: 10px;
+`;
+
+const Button3 = styled.div`
+  top: 0px;
+  left: 0px;
+  width: 66px;
+  height: 140px;
+  position: absolute;
+  background-color: rgba(155,155,155,1);
+  opacity: 0;
+  border: none;
 `;
 
 export default SwipeUp;

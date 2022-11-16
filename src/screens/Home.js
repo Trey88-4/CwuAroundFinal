@@ -11,7 +11,6 @@ import CupertinoButtonDelete from "../components/CupertinoButtonDelete";
 function Home(props) {
   return (
     <>
-
         <Image
             src={require("../assets/images/blankIphone.jpeg")}
             resizeMode="contain"
