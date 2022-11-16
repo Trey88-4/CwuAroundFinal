@@ -11,6 +11,12 @@ import CupertinoButtonDelete from "../components/CupertinoButtonDelete";
 function Home(props) {
   return (
     <>
+
+        <Image
+            src={require("../assets/images/blankIphone.jpeg")}
+            resizeMode="contain"
+        >
+        </Image>
       <MapView1>
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyDZcyFOaGz5nm6S5I_LEsLK--QH_2nHu6g" }}
@@ -25,7 +31,7 @@ function Home(props) {
           customMapStyle="Standard"
         />
       </MapView1>
-      <Rect2Stack>
+        <Rect2Stack>
         <Rect2>
           <Link to="/SwipeUp">
             <Button1>
@@ -95,7 +101,9 @@ function Home(props) {
           }}
         ></CupertinoButtonDelete>
       </Rect2Stack>
+
     </>
+
   );
 }
 
@@ -114,6 +122,7 @@ const ButtonOverlay = styled.button`
  border:none
  `;
 const Rect2 = styled.div`
+  border-radius: 10px;
   top: 0px;
   left: 0px;
   width: 320px;
@@ -178,6 +187,15 @@ const Rect2Stack = styled.div`
   margin-top: 9px;
   margin-left: 521px;
   position: relative;
+`;
+const Image = styled.img`
+  width: 590px;
+  height: 800px;
+  margin-top: -19px;
+  margin-left: 291px;
+  position: absolute;
+  left: 95px;
+  top: 10px;
 `;
 
 export default Home;

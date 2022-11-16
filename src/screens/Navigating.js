@@ -10,6 +10,11 @@ import CupertinoSearchBarWithCancelButton from "../components/CupertinoSearchBar
 function Navigating(props) {
   return (
     <>
+        <Image
+            src={require("../assets/images/blankIphone.jpeg")}
+            resizeMode="contain"
+        >
+        </Image>
       <MapView1>
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyDZcyFOaGz5nm6S5I_LEsLK--QH_2nHu6g" }}
@@ -111,6 +116,7 @@ const ButtonOverlay = styled.button`
  border:none
  `;
 const Rect1 = styled.div`
+  border-radius: 10px;
   top: 0px;
   left: 1px;
   width: 320px;
@@ -219,6 +225,15 @@ const Rect1Stack = styled.div`
   margin-top: 9px;
   margin-left: 522px;
   position: relative;
+`;
+const Image = styled.img`
+  width: 590px;
+  height: 800px;
+  margin-top: -19px;
+  margin-left: 291px;
+  position: absolute;
+  left: 95px;
+  top: 10px;
 `;
 
 export default Navigating;

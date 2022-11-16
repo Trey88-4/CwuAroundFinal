@@ -14,6 +14,11 @@ import GoogleMapReact from "google-map-react";
 function SwipeUp(props) {
   return (
     <>
+        <Image
+            src={require("../assets/images/blankIphone.jpeg")}
+            resizeMode="contain"
+        >
+        </Image>
       <RectStack>
         <Rect>
           <Link to="/Home">
@@ -367,6 +372,15 @@ const MapView1 = styled.div`
   width: 321px;
   margin-top: -635px;
   margin-left: 522px;
+`;
+const Image = styled.img`
+  width: 590px;
+  height: 800px;
+  margin-top: -19px;
+  margin-left: 291px;
+  position: absolute;
+  left: 95px;
+  top: 10px;
 `;
 
 export default SwipeUp;
